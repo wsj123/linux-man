@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## linux帮助命令
 
-You can use the [editor on GitHub](https://github.com/wsj123/linux-man/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+某个等级的帮助文件，不同的配置文件，不同的帮助等级，默认最小，用whereis可以实现同样的功能，再用man调用相应的帮助等级
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### man
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+man man 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+man ls
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+ls -a, --all
 
-[Link](url) and ![Image](src)
+man -f
+
+whatis
+
+man -f ls
+
+man -f passwd
+
+man 1 passwd
+
+
+man 5 passwd
+
+
+whereis passwd
+
+
+man 5 passwd
+
+vi /etc/passwd
+
+man -4 null
+
+man -8 ifconfig
+
+
+ls /dev/
+
+man -f null
+
+man 4 null
+
+man -k ls
+
+apropos passwd  查看和passwd帮助的命令
+
+man -k passwd
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wsj123/linux-man/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
